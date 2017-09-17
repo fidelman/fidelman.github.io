@@ -1,0 +1,14 @@
+@import '_variables.scss';
+
+.title {
+  border-top: 2px solid $ft-color;
+  border-bottom: 2px dotted $ft-color;
+  padding: 0 $mp-2;
+
+  h2 {
+    margin: 0;
+    font-size: $font-title;
+    font-family: $sans;
+    font-weight: normal;
+  }
+}

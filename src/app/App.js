@@ -1,14 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from './Header';
+import Experience from './Experience';
+import data from '../data';
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Header title="Andrei Fidelman" status="Front-End & JavaScript Developer"/>
-      </div>
-    );
-  }
-}
+const App = () => {
+  const { header, experience } = data;
+
+  return (
+    <div>
+      <Header title={header.title} status={header.status} />
+      <Experience title={experience.title} />
+    </div>
+  );
+};
 
 export default App;
