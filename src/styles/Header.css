@@ -18,12 +18,17 @@
         FONTS
 ========================
 */
-html {
-  background-color: #feffeb; }
+.header {
+  text-align: center;
+  padding: 60px 0 20px 0; }
 
-body {
-  color: #454447;
-  line-height: 1.5;
-  margin: auto;
-  padding: 0;
-  width: 1080px; }
+.header-title {
+  font-family: "Droid Sans", sans-serif;
+  font-size: 60px;
+  margin: 0;
+  text-transform: uppercase; }
+
+.header-status {
+  font-family: "Droid Serif", serif;
+  font-size: 24px;
+  margin: 0; }

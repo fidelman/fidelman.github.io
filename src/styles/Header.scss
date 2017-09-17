@@ -1,0 +1,19 @@
+@import '_variables.scss';
+
+.header {
+  text-align: center;
+  padding: $mp-5 0 $mp-2 0;
+}
+
+.header-title {
+  font-family: $sans;
+  font-size: $font-header;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.header-status {
+  font-family: $serif;
+  font-size: $font-title;
+  margin: 0;
+}
