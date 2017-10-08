@@ -1,0 +1,15 @@
+@import '_variables.scss';
+
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-bottom: $mp-4;
+
+  & > * {
+    display: block;
+
+    &:not(:last-child) {
+      margin-right: $mp-05;
+    }
+  }
+}

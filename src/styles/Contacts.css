@@ -1,0 +1,8 @@
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px; }
+  .contacts > * {
+    display: block; }
+    .contacts > *:not(:last-child) {
+      margin-right: 10px; }

@@ -87,4 +87,34 @@ export default {
       },
     ],
   },
+  contacts: {
+    title: 'Contacts',
+    content: [
+      {
+        id: 0,
+        url: '#',
+        logo: 'email',
+      },
+      {
+        id: 1,
+        url: '#',
+        logo: 'linkedin',
+      },
+      {
+        id: 2,
+        url: '#',
+        logo: 'github',
+      },
+      {
+        id: 3,
+        url: '#',
+        logo: 'youtube',
+      },
+      {
+        id: 4,
+        url: '#',
+        logo: 'print',
+      },
+    ],
+  },
 };
