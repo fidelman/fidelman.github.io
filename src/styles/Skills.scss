@@ -1,0 +1,124 @@
+@import '_variables.scss';
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skill {
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin-bottom: $mp-4;
+
+  &:nth-child(odd) {
+    padding-right: $mp-1;
+  }
+
+  &:nth-child(even) {
+    padding-left: $mp-1;
+  }
+}
+
+.skill-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 113px;
+  height: 80px;
+  border-radius: $mp-05;
+  position: relative;
+  margin-right: $mp-4;
+
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    border: $mp-1 solid transparent;
+    border-left: $mp-1 solid;
+    top: 50%;
+    right: 0;
+    transform: translate(100%, -50%);
+  }
+
+  &.skill-block-0 {
+    background-color: #BB8FC6;
+
+    &:after { border-left-color: #BB8FC6}
+  }
+
+  &.skill-block-1 {
+    background-color: #FB0000;
+
+    &:after { border-left-color: #FB0000}
+  }
+
+  &.skill-block-2 {
+    background-color: #F20074;
+
+    &:after { border-left-color: #F20074 }
+  }
+
+  &.skill-block-3 {
+    background-color: #5087A2;
+
+    &:after { border-left-color: #5087A2 }
+  }
+
+  &.skill-block-4 {
+    background-color: #7D75B5;
+
+    &:after { border-left-color: #7D75B5 }
+  }
+
+  &.skill-block-5 {
+    background-color: #FB3400;
+
+    &:after { border-left-color: #FB3400 }
+  }
+
+  &.skill-block-6 {
+    background-color: #76AAC5;
+
+    &:after { border-left-color: #76AAC5 }
+  }
+
+  &.skill-block-7 {
+    background-color: #B04FA5;
+
+    &:after { border-left-color: #B04FA5 }
+  }
+
+  &.skill-block-8 {
+    background-color: #FFBE43;
+
+    &:after { border-left-color: #FFBE43 }
+  }
+
+  &.skill-block-9 {
+    background-color: #7DB6E6;
+
+    &:after { border-left-color: #7DB6E6 }
+  }
+
+
+  span {
+    text-align: center;
+    color: white;
+    font-size: $font-exp-content;
+    font-family: $sans;
+  }
+}
+
+.skill-stars {
+  display: flex;
+  align-items: center;
+
+  & > *:not(:last-child) {
+    margin-right: $mp-05;
+  }
+}
+

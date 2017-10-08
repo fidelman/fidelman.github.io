@@ -1,7 +1,7 @@
 export default {
   header: {
     title: 'Andrei Fidelman',
-    status: 'Front-End & JavaScript Developer'
+    status: 'Front-End & JavaScript Developer',
   },
   experience: {
     title: 'Education & Experience',
@@ -29,6 +29,61 @@ export default {
         position: 'Full-Stack JavaScript Developer',
         company: 'Actum, s.r.o',
         location: 'Prague, Czech Republic',
+      },
+    ],
+  },
+  skills: {
+    title: 'Skills set',
+    content: [
+      {
+        id: 0,
+        name: 'JavaScript',
+        stars: 5,
+      },
+      {
+        id: 1,
+        name: 'HTML CSS3',
+        stars: 5,
+      },
+      {
+        id: 2,
+        name: 'Git',
+        stars: 5,
+      },
+      {
+        id: 3,
+        name: 'React Redux',
+        stars: 5,
+      },
+      {
+        id: 4,
+        name: 'Soft Skills',
+        stars: 5,
+      },
+      {
+        id: 5,
+        name: 'Presentation Skills',
+        stars: 5,
+      },
+      {
+        id: 6,
+        name: 'Webpack Gulp',
+        stars: 5,
+      },
+      {
+        id: 7,
+        name: 'NodeJS',
+        stars: 3,
+      },
+      {
+        id: 8,
+        name: 'MongoDB MySQL',
+        stars: 3,
+      },
+      {
+        id: 9,
+        name: 'React Native',
+        stars: 3,
       },
     ],
   },

@@ -4,6 +4,9 @@
   align-items: center;
   justify-content: space-between; }
 
+.experiences {
+  margin-bottom: 30px; }
+
 .experience-logo {
   width: 90px;
   height: 90px;
