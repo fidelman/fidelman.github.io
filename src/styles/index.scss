@@ -11,3 +11,10 @@ body {
   padding: 0;
   width: 1080px;
 }
+
+.title,
+.skills,
+.experiences,
+.contacts {
+  padding: 0 $mp-2;
+}

@@ -7,3 +7,9 @@ body {
   margin: auto;
   padding: 0;
   width: 1080px; }
+
+.title,
+.skills,
+.experiences,
+.contacts {
+  padding: 0 20px; }
