@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import Experience from './Experience';
+import Experiences from './Experiences';
 import data from '../data';
 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div>
       <Header title={header.title} status={header.status} />
-      <Experience title={experience.title} />
+      <Experiences title={experience.title} content={experience.content} />
     </div>
   );
 };

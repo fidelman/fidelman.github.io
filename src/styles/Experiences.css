@@ -1,0 +1,24 @@
+.experiences,
+.experience {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.experience-logo {
+  width: 90px;
+  height: 90px;
+  background-color: #76AAC5;
+  border-radius: 100%;
+  margin-right: 20px; }
+
+.experience-years {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  font-family: "Droid Sans", sans-serif;
+  font-weight: bold; }
+
+.experience-info {
+  margin: 0;
+  font-size: 18px;
+  font-family: "Droid Serif", serif;
+  font-weight: normal; }

@@ -1,0 +1,35 @@
+@import '_variables.scss';
+
+.experiences,
+.experience {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.experience {
+
+}
+
+.experience-logo {
+  $size: 90px;
+  width: $size;
+  height: $size;
+  background-color: $main-color;
+  border-radius: 100%;
+  margin-right: $mp-2;
+}
+
+.experience-years {
+  margin: 0 0 $mp-05 0;
+  font-size: $font-exp-year;
+  font-family: $sans;
+  font-weight: bold;
+}
+
+.experience-info {
+  margin: 0;
+  font-size: $font-exp-content;
+  font-family: $serif;
+  font-weight: normal;
+}

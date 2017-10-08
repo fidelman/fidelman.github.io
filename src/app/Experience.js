@@ -1,19 +1,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Title from './Title';
 
 const Experience = (props) => {
-  const { title } = props;
-
   return (
     <div className="experience">
-      <Title title={title} />
+      <div className="experience-logo">
+        <img src={`../gfx/${props.icon}.svg`} alt={props.icon} />
+      </div>
+      <div className="experience-content">
+        <p className="experience-years">{props.years}</p>
+        <p className="experience-info">{props.position}</p>
+        <p className="experience-info">{props.company}</p>
+        <p className="experience-info">{props.location}</p>
+      </div>
     </div>
   );
 };
 
+Experience.defaultProps = {
+  icon: '../gfx/laptop.svg',
+};
+
 Experience.propTypes = {
-  title: PropTypes.string.isRequired,
+  years: PropTypes.string.isRequired,
+  position: PropTypes.string.isRequired,
+  company: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  icon: PropTypes.string,
 };
 
 export default Experience;
