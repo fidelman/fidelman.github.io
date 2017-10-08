@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Title from './Title';
+import Logo from './Logo';
 import '../styles/Contacts.css';
 
 const Experiences = (props) => {
@@ -8,7 +9,9 @@ const Experiences = (props) => {
 
   const contacts = content.map((contact) => {
     return (
-      <a key={contact.id} href={contact.url}>{contact.logo}</a>
+      <a target="_blank" key={contact.id} href={contact.url}>
+        <Logo name={contact.logo} alt={contact.logo} type="png" />
+      </a>
     );
   });
 

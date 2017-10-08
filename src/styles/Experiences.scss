@@ -12,6 +12,9 @@
 }
 
 .experience-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   $size: 90px;
   width: $size;
   height: $size;

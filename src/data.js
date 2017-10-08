@@ -68,7 +68,7 @@ export default {
       {
         id: 6,
         name: 'Webpack Gulp',
-        stars: 5,
+        stars: 4,
       },
       {
         id: 7,
@@ -92,17 +92,17 @@ export default {
     content: [
       {
         id: 0,
-        url: '#',
+        url: 'mailto:fidelmanlife@gmail.com',
         logo: 'email',
       },
       {
-        id: 1,
+        id: 4,
         url: '#',
-        logo: 'linkedin',
+        logo: 'print',
       },
       {
         id: 2,
-        url: '#',
+        url: 'https://github.com/fidelman',
         logo: 'github',
       },
       {
@@ -111,9 +111,9 @@ export default {
         logo: 'youtube',
       },
       {
-        id: 4,
-        url: '#',
-        logo: 'print',
+        id: 1,
+        url: 'https://www.linkedin.com/in/andrei-fidelman-8b66bb108/',
+        logo: 'linkedin',
       },
     ],
   },

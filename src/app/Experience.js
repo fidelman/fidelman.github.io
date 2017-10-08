@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Logo from './Logo';
 
 const Experience = (props) => {
   return (
     <div className="experience">
       <div className="experience-logo">
-        <img src={`../gfx/${props.icon}.svg`} alt={props.icon} />
+        <Logo name={props.icon} alt={props.icon} type="svg" />
       </div>
       <div className="experience-content">
         <p className="experience-years">{props.years}</p>

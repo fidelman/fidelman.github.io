@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Logo from './Logo';
 
-const getStars = (number) => {
+const getStars = (number, id) => {
   const stars = [];
-  for (let i = 1; i <= number; i += 1) {
-    const Star = <div>S</div>;
-    stars.push(Star);
+  for (let i = 0; i < number; i += 1) {
+    stars.push(<Logo name={`star-${id}`} type="svg" />);
   }
 
   return stars;
@@ -18,7 +18,7 @@ const Skill = (props) => {
         <span>{props.name}</span>
       </div>
       <div className="skill-stars">
-        {getStars(props.stars)}
+        {getStars(props.stars, props.id)}
       </div>
     </div>
   );
