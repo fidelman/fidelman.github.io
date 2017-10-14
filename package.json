@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "firebase": "^4.5.1",
     "flow-bin": "^0.54.1",
     "node-sass-chokidar": "^0.0.3",
     "normalize.css": "^7.0.0",

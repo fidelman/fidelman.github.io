@@ -8,6 +8,8 @@ const Experiences = (props) => {
   const { title, content } = props;
 
   const contacts = content.map((contact) => {
+    if (!contact.url) return null;
+
     return (
       <a target="_blank" key={contact.id} href={contact.url}>
         <Logo name={contact.logo} alt={contact.logo} type="png" />

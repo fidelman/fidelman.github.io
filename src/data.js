@@ -97,7 +97,7 @@ export default {
       },
       {
         id: 4,
-        url: '#',
+        url: '/FidelmanCV.pdf',
         logo: 'print',
       },
       {

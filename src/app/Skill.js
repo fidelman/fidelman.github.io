@@ -5,7 +5,7 @@ import Logo from './Logo';
 const getStars = (number, id) => {
   const stars = [];
   for (let i = 0; i < number; i += 1) {
-    stars.push(<Logo name={`star-${id}`} type="svg" />);
+    stars.push(<Logo key={`${id}-${i}`} name={`star-${id}`} type="svg" />);
   }
 
   return stars;
