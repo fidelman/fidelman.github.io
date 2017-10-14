@@ -8,18 +8,22 @@
 }
 
 .skill {
-  width: 50%;
+  width: 100%;
   box-sizing: border-box;
-  display: flex;
-  align-items: center;
   margin-bottom: $mp-4;
 
-  &:nth-child(odd) {
-    padding-right: $mp-1;
-  }
+  @media screen and (min-width: map_get($breakpoints, md)) {
+    width: 50%;
+    display: flex;
+    align-items: center;
 
-  &:nth-child(even) {
-    padding-left: $mp-1;
+    &:nth-child(odd) {
+      padding-right: $mp-1;
+    }
+
+    &:nth-child(even) {
+      padding-left: $mp-1;
+    }
   }
 }
 
@@ -27,14 +31,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 113px;
-  height: 80px;
   border-radius: $mp-05;
   position: relative;
-  margin-right: $mp-4;
+  padding: $mp-05;
+  margin-bottom: $mp-1;
 
   &:after {
-    content: '';
     position: absolute;
     display: block;
     border: $mp-1 solid transparent;
@@ -42,6 +44,17 @@
     top: 50%;
     right: 0;
     transform: translate(100%, -50%);
+  }
+
+  @media screen and (min-width: map_get($breakpoints, md)) {
+    &:after {
+      content: '';
+    }
+
+    width: 113px;
+    height: 55px;
+    margin-right: $mp-4;
+    margin-bottom: 0;
   }
 
   &.skill-block-0 {
@@ -116,9 +129,26 @@
 .skill-stars {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 
-  & > *:not(:last-child) {
-    margin-right: $mp-05;
+  & > * {
+    width: 40px;
+
+    &:not(:last-child) {
+      margin-right: $mp-05;
+    }
+  }
+
+  @media screen and (min-width: map_get($breakpoints, md)) {
+    & > * {
+      width: 27px;
+    }
+  }
+
+  @media screen and (min-width: map_get($breakpoints, lg)) {
+    & > * {
+      width: 50px;
+    }
   }
 }
 

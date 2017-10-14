@@ -11,5 +11,15 @@
     &:not(:last-child) {
       margin-right: $mp-1;
     }
+
+    img {
+      $size: 40px;
+      width: $size;
+
+      @media screen and (min-width: map_get($breakpoints, md)) {
+        $size: 65px;
+        width: $size;
+      }
+    }
   }
 }

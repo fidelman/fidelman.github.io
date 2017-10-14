@@ -7,8 +7,12 @@
 
   h2 {
     margin: 0;
-    font-size: $font-title;
+    font-size: $font-title-mobile;
     font-family: $sans;
     font-weight: normal;
+
+    @media screen and (min-width: map_get($breakpoints, md)) {
+      font-size: $font-title;
+    }
   }
 }

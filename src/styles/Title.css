@@ -4,6 +4,9 @@
   margin-bottom: 30px; }
   .title h2 {
     margin: 0;
-    font-size: 33px;
+    font-size: 18px;
     font-family: "Droid Sans", sans-serif;
     font-weight: normal; }
+    @media screen and (min-width: 768px) {
+      .title h2 {
+        font-size: 33px; } }

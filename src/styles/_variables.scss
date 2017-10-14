@@ -13,8 +13,14 @@ $color8: #BB8FC6;
 $color9: #FB0000;
 
 $font-header: 60px;
+$font-header-mobile: 45px;
+
 $font-title: 33px;
+$font-title-mobile: 18px;
+
 $font-status: 24px;
+$font-status-mobile: 16px;
+
 $font-contact: 22px;
 $font-exp-year: 22px;
 $font-exp-content: 18px;
@@ -27,3 +33,11 @@ $mp-05: 10px;
 
 $sans: 'Droid Sans', sans-serif;
 $serif: 'Droid Serif', serif;
+
+$breakpoints: (
+  xs: 320px,
+  sm: 425px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1440px
+);

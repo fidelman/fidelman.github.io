@@ -6,3 +6,8 @@
     display: block; }
     .contacts > *:not(:last-child) {
       margin-right: 15px; }
+    .contacts > * img {
+      width: 40px; }
+      @media screen and (min-width: 768px) {
+        .contacts > * img {
+          width: 65px; } }
