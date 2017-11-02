@@ -4,6 +4,7 @@ import Header from './Header';
 import Experiences from './Experiences';
 import Skills from './Skills';
 import Contacts from './Contacts';
+import Gallery from './Gallery';
 
 class App extends Component {
   state = {
@@ -11,6 +12,7 @@ class App extends Component {
     experience: {},
     skills: {},
     contacts: {},
+    videos: {},
     render: false,
   };
 
@@ -26,7 +28,7 @@ class App extends Component {
   }
 
   render() {
-    const { header, experience, skills, contacts, render } = this.state;
+    const { header, experience, skills, contacts, render, gallery } = this.state;
 
     if (!render) return null;
 
@@ -35,6 +37,7 @@ class App extends Component {
         <Header title={header.title} status={header.status} />
         <Experiences title={experience.title} content={experience.content} />
         <Skills title={skills.title} content={skills.content} />
+        <Gallery title={gallery.title} content={gallery.content} />
         <Contacts title={contacts.title} content={contacts.content} />
       </div>
     );
