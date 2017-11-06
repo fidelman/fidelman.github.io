@@ -14,7 +14,7 @@ const renderVideo = (item) => {
 const Gallery = (props) => {
   if (!props.content.length) return null;
 
-  const items = props.content.map((item) => {
+  const items = props.content.reverse().map((item) => {
     return {
       ...item,
       renderItem: renderVideo,
