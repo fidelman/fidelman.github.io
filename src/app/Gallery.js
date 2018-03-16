@@ -39,7 +39,6 @@ Gallery.propTypes = {
   content: PropTypes.arrayOf(PropTypes.shape({
     thumbnail: PropTypes.string.isRequired,
     embedUrl: PropTypes.string.isRequired,
-    renderItem: PropTypes.func.isRequired,
     title: PropTypes.string.isRequired,
   })).isRequired,
 };

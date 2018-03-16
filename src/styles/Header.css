@@ -1,6 +1,7 @@
 .header {
   text-align: center;
-  padding: 20px 0 20px 0; }
+  padding: 20px 0 20px 0;
+  position: relative; }
   @media screen and (min-width: 768px) {
     .header {
       padding-top: 60px; } }
@@ -16,8 +17,49 @@
   font-size: 16px;
   margin: 0; }
 
+.pdf-badge {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 10px;
+  top: 10px;
+  background-color: #feffeb;
+  opacity: .8;
+  box-shadow: 0 0 10px #454447;
+  border-radius: 100%;
+  transform: rotate(20deg);
+  z-index: 1; }
+  .pdf-badge img {
+    width: 35px;
+    animation: pdf-badge 3s ease-in-out infinite;
+    animation-delay: 3s; }
+
 @media screen and (min-width: 768px) {
   .header-title {
     font-size: 60px; }
   .header-status {
-    font-size: 24px; } }
+    font-size: 24px; }
+  .pdf-badge {
+    width: 90px;
+    height: 90px;
+    right: 30px;
+    top: 20px; }
+    .pdf-badge img {
+      width: 50px; } }
+
+@keyframes pdf-badge {
+  0% {
+    transform: translateX(0); }
+  3% {
+    transform: translateX(-4px); }
+  6% {
+    transform: translateX(3px); }
+  9% {
+    transform: translateX(-2px); }
+  12% {
+    transform: translateX(1px); }
+  15% {
+    transform: translateX(0); } }

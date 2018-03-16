@@ -13,6 +13,7 @@ class App extends Component {
     skills: {},
     contacts: {},
     videos: {},
+    pdf: {},
     render: false,
   };
 
@@ -28,13 +29,13 @@ class App extends Component {
   }
 
   render() {
-    const { header, experience, skills, contacts, render, gallery } = this.state;
+    const { header, experience, skills, contacts, render, gallery, pdf } = this.state;
 
     if (!render) return null;
 
     return (
       <div>
-        <Header title={header.title} status={header.status} />
+        <Header title={header.title} status={header.status} pdf={pdf} />
         <Experiences title={experience.title} content={experience.content} />
         <Skills title={skills.title} content={skills.content} />
         <Gallery title={gallery.title} content={gallery.content} />
