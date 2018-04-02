@@ -13,7 +13,7 @@ const Experiences = (props) => {
 
   return (
     <div>
-      <Title title={title} />
+      <Title title={title} alt="More info on stackshare.io" url="https://embed.stackshare.io/stacks/embed/22460bb3beaf9e3873143f1391ea35" />
       <div className="skills">
         {skills}
       </div>
